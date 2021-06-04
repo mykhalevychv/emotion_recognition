@@ -1,0 +1,19 @@
+{%extends "base.html"%}
+
+{%block content%}
+
+<body> 
+    
+<div class="container mt-5" style="font: size 10px;">
+<center>
+
+<h2>Video After Processing</h2>
+
+<img  width="70%" height="70%" src="{{ url_for('video_feed') }}">
+
+<h2 class='text-body'> <span class='text-body font-weight-bold'> {{data}} </span> </h2>
+
+</center>
+</div>
+</body>
+{%endblock%}

@@ -1,0 +1,28 @@
+<html style="height: 100%;background-repeat: no-repeat;background-attachment:fixed  ;">
+{%extends "base.html"%}
+
+{%block content%}
+
+<body >
+<div class="container mt-5">
+  <h2 class='display-3'>Emotion recognition project</h2>
+<div class="form-group-1">
+  <h1>Select image</h1>
+  <form name='frm' method='POST' action="{{url_for('image')}}" enctype='multipart/form-data'>  
+      	<div class="custom-file my-3">
+    		<input type="file" name="select_image" value="choose file"></div>
+    <input type="submit" name="btn" value="process image" width="100pt" class='btn btn-dark btn-lg'>
+  </form></div>
+<div class="form-group-2">
+  <h1>Select video</h1>
+  <form name='frm' method='POST' action="{{url_for('video')}}" enctype='multipart/form-data'>
+      <div class="custom-file my-3"> 
+        <input type="file" name="select_video" value="choose file">
+    </div>
+    <input type="submit" name="btn" value="process video" width="100pt" class='btn btn-dark btn-lg'>
+  </form>
+</div>
+</div>
+</body>
+</html>
+{%endblock%}

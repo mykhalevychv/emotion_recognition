@@ -1,0 +1,19 @@
+{%extends "base.html"%}
+
+{%block content%}
+
+<body>
+<div class="container mt-5" style="font: size 10px;">
+<center>
+<h3>
+	You selected this image</h3>
+
+<img src="{{url_for('static', filename='after.jpg')}}" height=40% width=40% >
+
+
+<h2 class='text-body'> <span class='text-body font-weight-bold'> {{data}} </span> </h2>
+
+</center>
+</div>
+</body>
+{%endblock%}
