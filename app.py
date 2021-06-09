@@ -113,7 +113,7 @@ def gen():
 
 @app.route('/video_feed')
 def video_feed():
-    """Video streaming route. Put this in the src attribute of an img tag."""
+    """Video streaming route"""
     return Response(gen(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
